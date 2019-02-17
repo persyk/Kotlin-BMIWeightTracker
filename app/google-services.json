@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "485920895478",
+    "firebase_url": "https://bmiweighttracker-90753.firebaseio.com",
+    "project_id": "bmiweighttracker-90753",
+    "storage_bucket": "bmiweighttracker-90753.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485920895478:android:54cbc9c5b6b9ee77",
+        "android_client_info": {
+          "package_name": "com.pilipf.bmiweighttracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485920895478-lrcruhsmof7269qc2fg4ivcumhvfbbks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOXKy5_vp5ADSo8p27Xe-ue5rJV-dJwME"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

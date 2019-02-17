@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_main.*
-import java.math.BigDecimal
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,12 +18,21 @@ class MainActivity : AppCompatActivity() {
         // set on-click listener
         calculate_bmi.setOnClickListener {
 
-            var heightText = findViewById<EditText>(R.id.height)
+            val heightText = findViewById<EditText>(R.id.height)
             val height: Double = heightText.text.toString().toDouble()
 
-            var weight: Double = findViewById<EditText>(R.id.weight).text.toString().toDouble()
+            val weight: Double = findViewById<EditText>(R.id.weight).text.toString().toDouble()
 
-            textView.text = Math.round(weight / Math.pow(height/100, 2.0)).toString()
+            val bmi = Math.round(weight / Math.pow(height/100, 2.0))
+
+            if (bmi <18.5){
+                textView.text = "Your BMI is" +bmi.toString()+" so you are skinny"
+            }
+            if (bmi > 19) {
+                finish()
+            }
+
+            //textView.text =
         }
 
         }
